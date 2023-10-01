@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">Loja</a>
+    <a href="#">Contato</a>
+    <a href="#">Parceiros</a>
+    <a href="#">Login</a>
+  </div>
+  <div class="navbar">
+    <div>
+      <div class="logo" style="padding: 5px;"><img src="img/memedoge.webp" alt="Logo" style="width: 257px; height: 76px;"></div>
+      <div></div>
+    </div>
+    <div class="search-bar" style="display: flex;justify-content: center;padding-top: 5px;padding-bottom: 5px;width: 100%;">
+      <input type="text" placeholder="Pesquise Aqui!" style="width: 95%; font-size: 80px;">
+      <button type="submit"><i class="fa fa-search">?</i></button>
+    </div>
+    <div class="sidebar-navbar">
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+
+</body>
+
+</html>
