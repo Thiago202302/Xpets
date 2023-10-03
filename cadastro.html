@@ -3,68 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style-login.css">
     <title>Login</title>
+    <style>
+        ul{
+            list-style-type: none;
+        }
+    </style>
 </head>
 <body>
     <header></header>
 
-    <div class="seletor">
-        <ul>
-            <li><button class="tutor">Tutor</button></li>
-            <li><button class="pet">Pet</button></li>
-        </ul>
+    <div class="container">
+        <div class="seletor">
+            <button class="tutor" onclick="toggleTutorForm()">Tutor</button>
+            <button class="pet" onclick="togglePetForm()">Pet</button>
+        </div>
+    
+        <div class="container-tutor" id="form-tutor" hidden>
+            <form action="" method="post" class="tutor">
+                <label for="nometutor">Nome do Tutor:</label>
+                <input type="text" placeholder="Nome do Tutor" required>
+        
+                <label for="contato">Contato:</label>
+                <input type="text" placeholder="Telefone pra Contato" required>
+        
+                <label for="endereço">Endereço do tutor:</label>
+                <input type="text" placeholder="Rua">
+                <input type="text" placeholder="Nº da casa">
+                <input type="text" placeholder="Bairro">
+                <input type="text" placeholder="Cidade">
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    
+        <div class="container-pets" id="form-pet" hidden>
+            <form action="" method="post">
+                <label for="nomepet">Nome do Pet:</label>
+                <input type="text" placeholder="Nome do animal(Não é do tutor!!!)">
+    
+                <label for="raca">Raça do Animal</label>
+                <input type="text" placeholder="">
+    
+                <label for="idadepet">Idade do Animal:</label>
+                <input type="text" placeholder="Idade do animal!!">
+    
+                <p>Espécie</p>
+                <label for="cachorro">Cachorro:</label>
+                <input type="radio" name="cachorro" id="cachorro">
+    
+                <label for="cachorro">Cachorro:</label>
+                <input type="radio" name="cachorro" id="cachorro">
+    
+                <label for="cachorro">Cachorro:</label>
+                <input type="radio" name="cachorro" id="cachorro">
+    
+                <label for="cachorro">Cachorro:</label>
+                <input type="radio" name="cachorro" id="cachorro">
+    
+                <p>Sexo:</p>
+    
+                <label for="cachorro">Cachorro:</label>
+                <input type="radio" name="cachorro" id="cachorro">
+                <label for="cachorro">Cachorro:</label>
+                <input type="radio" name="cachorro" id="cachorro">
+            </form>
+        </div>
     </div>
 
-    <div>
-        <form action="" method="post" class="tutor">
-            <label for="nometutor">Nome do Tutor:</label>
-            <input type="text" placeholder="Nome do Tutor" required>
-    
-            <label for="contato">Contato:</label>
-            <input type="text" placeholder="Telefone pra Contato" required>
-    
-            <label for="endereço">Endereço do tutor:</label>
-            <input type="text" placeholder="Rua">
-            <input type="text" placeholder="Nº da casa">
-            <input type="text" placeholder="Bairro">
-            <input type="text" placeholder="Cidade">
-    
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
+    <script>
+        let tutorFormVisible = false;
+        let petFormVisible = false;
 
-    <div>
-        <form action="" method="post">
-            <label for="nomepet">Nome do Pet:</label>
-            <input type="text" placeholder="Nome do animal(Não é do tutor!!!)">
+        function toggleTutorForm() {
+            if (tutorFormVisible) {
+                document.getElementById("form-tutor").style.display = "none";
+            } else {
+                document.getElementById("form-tutor").style.display = "block";
+            }
+            tutorFormVisible = !tutorFormVisible;
+            if (petFormVisible) {
+                document.getElementById("form-pet").style.display = "none";
+                petFormVisible = false;
+            }
+        }
 
-            <label for="raca">Raça do Animal</label>
-            <input type="text" placeholder="">
+        function togglePetForm() {
+            if (petFormVisible) {
+                document.getElementById("form-pet").style.display = "none";
+            } else {
+                document.getElementById("form-pet").style.display = "block";
+            }
+            petFormVisible = !petFormVisible;
+            if (tutorFormVisible) {
+                document.getElementById("form-tutor").style.display = "none";
+                tutorFormVisible = false;
+            }
+        }
+    </script>
 
-            <label for="idadepet">Idade do Animal:</label>
-            <input type="text" placeholder="Idade do animal!!">
-
-            <p>Espécie</p>
-            <label for="cachorro">Cachorro:</label>
-            <input type="radio" name="cachorro" id="cachorro">
-
-            <label for="cachorro">Cachorro:</label>
-            <input type="radio" name="cachorro" id="cachorro">
-
-            <label for="cachorro">Cachorro:</label>
-            <input type="radio" name="cachorro" id="cachorro">
-
-            <label for="cachorro">Cachorro:</label>
-            <input type="radio" name="cachorro" id="cachorro">
-
-            <p>Sexo:</p>
-
-            <label for="cachorro">Cachorro:</label>
-            <input type="radio" name="cachorro" id="cachorro">
-            <label for="cachorro">Cachorro:</label>
-            <input type="radio" name="cachorro" id="cachorro">
-        </form>
-    </div>
 
 </body>
 </html>
