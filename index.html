@@ -1,91 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principa</title>
+    <link rel="stylesheet" href="css/style-index.css">
+    <link rel="stylesheet" href="css/style-main.css">
 </head>
 
 <body>
-  <div>
-    <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="#">Loja</a>
-      <a href="#">Contato</a>
-      <a href="#">Parceiros</a>
-      <a href="#">Login</a>
-    </div>
-    <div class="navbar">
-      <div>
-        <div class="logo" style="padding: 5px;"><img src="memedoge.webp" alt="Logo" style="width: 257px; height: 76px;">
+    <!--Cabeçario do Site, com a imagem de logo e três menus que redirecionam para os principais recursos do site-->
+    <Header>
+        <div class="menup">
+            <div class="logo"><a href="index.html"><img src="" alt="Logo da Empresa" class="logo_xpets"></a></div>
+
+            <div class="Menu">
+                <ul class="submenu">
+                    <li><a href="loja.html" class="button">Loja</a></li>
+                    <li><a href="#" class="button">Serviços</a></li>
+                    <li><a href="#" class="button">Login</a></li>
+                </ul>
+            </div>
         </div>
-        <div></div>
-      </div>
-      <div class="search-bar"
-        style="display: flex;justify-content: center;padding-top: 5px;padding-bottom: 5px;width: 100%;">
-        <input type="text" placeholder="Pesquise Aqui!" style="width: 95%; font-size: 40px;">
-        <button type="submit"><i class="fa fa-search">?</i></button>
-      </div>
-      <div class="sidebar-navbar">
-        <div id="main">
-          <button class="openbtn" onclick="openNav()">☰</button>
+    </Header>
+
+    <!--Parte principal do site, contendo dois infos de quem nós somos, e duas imagens ao lado-->
+
+    <main>
+        <div class="preenchimento" >
+            <div class="imagem_feliz">
+                <img src="assets/img/licensed-image.jpg" alt="">
+            </div>
+            <div class="texto_patrocinado">
+                <h3>Xpets</h3>
+                <p>Aqui, dedicamos nosso amor e cuidado a cada patinha, plumagem e pelagem que entra pela nossa porta. Com uma variedade de produtos premium, serviços de grooming de alta qualidade e uma equipe apaixonada por pets, estamos prontos para transformar cada visita em uma experiência inesquecível para você e seu companheiro de quatro patas. Junte-se a nós e faça do seu animal de estimação um VIP, porque eles merecem o melhor!</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="vitrine">
-    <h1>Nossos principais produtos</h1>
-    <div class="produtos">
-      <div class="card">
-        <img src="produto1.jpg" alt="Produto 1">
-        <h2>Produto 1</h2>
-        <p>Descrição do Produto 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p class="price">$19.99</p>
-        <button>Adicionar ao Carrinho</button>
-      </div>
-      <div class="card">
-        <img src="produto2.jpg" alt="Produto 2">
-        <h2>Produto 2</h2>
-        <p>Descrição do Produto 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p class="price">$29.99</p>
-        <button>Adicionar ao Carrinho</button>
-      </div>
-      <div class="card">
-        <img src="produto3.jpg" alt="Produto 3">
-        <h2>Produto 3</h2>
-        <p>Descrição do Produto 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p class="price">$39.99</p>
-        <button>Adicionar ao Carrinho</button>
-      </div>
-      <div class="card">
-        <img src="produto1.jpg" alt="Produto 1">
-        <h2>Produto 1</h2>
-        <p>Descrição do Produto 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p class="price">$19.99</p>
-        <button>Adicionar ao Carrinho</button>
-      </div>
-      <div class="card">
-        <img src="produto2.jpg" alt="Produto 2">
-        <h2>Produto 2</h2>
-        <p>Descrição do Produto 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p class="price">$29.99</p>
-        <button>Adicionar ao Carrinho</button>
-      </div>
-    </div>
-  </div>
+        <div class="preenchimento">
+            <div class="texto_patrocinado">
+                <h3>Xpets</h3>
+                <p>Aqui, dedicamos nosso amor e cuidado a cada patinha, plumagem e pelagem que entra pela nossa porta. Com uma variedade de produtos premium, serviços de grooming de alta qualidade e uma equipe apaixonada por pets, estamos prontos para transformar cada visita em uma experiência inesquecível para você e seu companheiro de quatro patas. Junte-se a nós e faça do seu animal de estimação um VIP, porque eles merecem o melhor!</p>
+            </div>
+            <div class="imagem_feliz">
+                <img src="assets/img/cao-labrador-3-copy.webp" alt="">
+            </div>
+        </div>
+    </main>
 
-    <script>
-      function openNav() {
-        document.getElementById("mySidebar").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-      }
+    <!--
+        Parte do Rodape do site , contendo três conteiners: 
+        Artigos sobre nois, 
+        informacões para contato 
+        e nosso endereço.
+    -->
 
-      function closeNav() {
-        document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-      }
-    </script>
+    <footer>
+        <div class="info">
+            <div class="lerolero">
+                <ul class="lero">
+                    <li><a href="">Quem somos.</a></li>
+                    <li><a href="">Nossa missão</a></li>
+                    <li><a href="">Trabalhe conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="telefones">
+                <p>Telefones:</p>
+                <div style="width: 2px;"></div>
+                <div>
+                    <p>92 93314699</p>
+                    <p>92 93314699</p>
+                    <p>92 93314699</p>
+                </div>
+            </div>
+
+            <div class="endereco">
+                <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                    <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                    var setting = {"query":"1-1 Chiyoda, Tóquio, Japão","width":300,"height":150,"satellite":false,"zoom":14,"placeId":"ChIJx-meWQmMGGARx4Wl1t8hdwE","cid":"0x17721dfd6a585c7","coords":[35.6865546,139.7578008],"lang":"pt","queryString":"1-1 Chiyoda, Tóquio, Japão","centerCoord":[35.6865546,139.7578008],"id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"1005770"};
+                    var d = document;
+                    var s = d.createElement('script');
+                    s.src = 'https://1map.com/js/script-for-user.js?embed_id=1005770';
+                    s.async = true;
+                    s.onload = function (e) {
+                      window.OneMap.initMap(setting)
+                    };
+                    var to = d.getElementsByTagName('script')[0];
+                    to.parentNode.insertBefore(s, to);
+                  })();</script><a href="https://1map.com/pt/map-embed">1 Map</a></div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <H1>© 2023 Xpets S.A.</H1>
+        </div>
+    </footer>
 
 </body>
 

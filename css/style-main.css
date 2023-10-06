@@ -1,0 +1,105 @@
+/*
+    Nesse aquivo css estão declarados os estilos do cabeçario e rodape.
+
+    Todos as paginas que usarem o cabeçario e o rodape generíco devem utilizar esse arquivo.
+*/
+
+body{
+    background-color: #ffda99;
+}
+
+/* 
+    Parte destinada para o cabeçario do site
+*/
+
+header{
+    background-color: #623f19;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.menup{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    background-color: #623f19;
+}
+
+.submenu{
+    list-style-type: none;
+    display: flex;
+}
+
+li{
+    margin: 5px;
+}
+
+/* Estilize os links de redirecionamento como botões */
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0px 10px 0 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #B77A3B; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    font-size: 16px; /* Tamanho do texto */
+    cursor: pointer; /* Transforma o cursor em uma mão quando hover */
+}
+
+/* Estilos para o hover (quando o mouse passa por cima) */
+a.button:hover {
+    background-color: #d89149; /* Cor de fundo alterada no hover */
+    border: auto solid #a86f37; /* Borda alterada no hover */
+}
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 5px;
+}
+
+/* 
+    Parte destinada para o rodape do site
+*/
+
+footer{
+    background-color: #623f19;
+    color: aliceblue;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lero{
+    list-style-type: none;
+    padding-inline-start: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 130px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lero a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.telefones{
+    display: flex;
+}
+
+.endereco{
+    margin: 10px 10px 10px 0px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
