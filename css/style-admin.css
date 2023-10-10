@@ -1,0 +1,25 @@
+.menu-admin{
+    background-color: #B77A3B;
+    border: 2px solid;
+    border-radius: 0px 15px 15px 0px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.menu-admin button{
+    background-color: #B77A3B;
+    color: aliceblue;
+    width: 75px;
+    height: 65px;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    min-width: 100%;
+}
+
+.menu-admin button:hover{
+    color: aliceblue;
+    background-color: #d89149;
+}

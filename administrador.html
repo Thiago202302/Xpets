@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adiministrador</title>
+    <link rel="stylesheet" href="css/style-main.css">
+    <link rel="stylesheet" href="css/style-admin.css">
+</head>
+
+<body>
+    <!--Cabeçario do Site, com a imagem de logo e três menus que redirecionam para os principais recursos do site-->
+    <Header>
+        <div class="menup">
+            <div class="logo"><a href="index.html"><img src="" alt="Logo da Empresa" class="logo_xpets"></a></div>
+
+            <div class="Menu">
+                <ul class="submenu">
+                    <li><a href="Loja.html" class="button">Loja</a></li>
+                    <li><a href="#" class="button">Serviços</a></li>
+                    <li><a href="login.html" class="button">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </Header>
+
+    <main>
+        <div class="menu-admin">
+
+            <button>Usúarios</button>
+            <div class="submenu-user" hidden>
+                <a href="">Inspecionar Usúario</a>
+                <a href="">Cadastrar Usúario</a>
+                <a href="">Remover Usúario</a>
+                <a href="">Gerar Relatorios sobre Usúarios</a>
+            </div>
+
+            <button>Funcionarios</button>
+            <div class="submenu-func" hidden>
+                <a href="">Inspecionar Funcionarios</a>
+                <a href="">Cadastrar Funcionarios</a>
+                <a href="">Remover Funcionarios</a>
+                <a href="">Gerar Relatorios sobre Funcionarios</a>
+            </div>
+
+            <button >produtos</button>
+            <div class="submenu-produc" hidden>
+                <a href="">Inspecionar Produtos</a>
+                <a href="">Cadastrar Produtos</a>
+                <a href="">Remover Produtos</a>
+                <a href="">Gerar Relatorios sobre Produtos</a>
+            </div>
+
+            <button>Relatorios</button>
+            <div class="submenu-relatorios" hidden>
+                <a href="">Gerar Todos os Relatorios</a>
+            </div>
+        </div>
+
+        <script>
+            // Seleciona todos os botões do menu-admin
+            const buttons = document.querySelectorAll('.menu-admin button');
+          
+            // Adiciona um evento de clique a cada botão
+            buttons.forEach(button => {
+              button.addEventListener('click', () => {
+                // Encontra o submenu correspondente com base na classe do botão
+                const submenu = button.nextElementSibling;
+          
+                // Verifica se o submenu está oculto e o torna visível, ou vice-versa
+                if (submenu.style.display === 'none' || submenu.style.display === '') {
+                  submenu.style.display = 'block';
+                } else {
+                  submenu.style.display = 'none';
+                }
+              });
+            });
+          </script>
+          
+    </main>
+
+    <!--
+        Parte do Rodape do site , contendo três conteiners: 
+        Artigos sobre nois, 
+        informacões para contato 
+        e nosso endereço.
+    -->
+
+    <footer>
+        <div class="info">
+            <div class="lerolero">
+                <ul class="lero">
+                    <li><a href="">Quem somos.</a></li>
+                    <li><a href="">Nossa missão</a></li>
+                    <li><a href="">Trabalhe conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="telefones">
+                <p>Telefones:</p>
+                <div style="width: 2px;"></div>
+                <div>
+                    <p>92 93314699</p>
+                    <p>92 93314699</p>
+                    <p>92 93314699</p>
+                </div>
+            </div>
+
+            <div class="endereco">
+                <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                    <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+                    <script>(function () {
+                            var setting = { "query": "1-1 Chiyoda, Tóquio, Japão", "width": 300, "height": 150, "satellite": false, "zoom": 14, "placeId": "ChIJx-meWQmMGGARx4Wl1t8hdwE", "cid": "0x17721dfd6a585c7", "coords": [35.6865546, 139.7578008], "lang": "pt", "queryString": "1-1 Chiyoda, Tóquio, Japão", "centerCoord": [35.6865546, 139.7578008], "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "1005770" };
+                            var d = document;
+                            var s = d.createElement('script');
+                            s.src = 'https://1map.com/js/script-for-user.js?embed_id=1005770';
+                            s.async = true;
+                            s.onload = function (e) {
+                                window.OneMap.initMap(setting)
+                            };
+                            var to = d.getElementsByTagName('script')[0];
+                            to.parentNode.insertBefore(s, to);
+                        })();</script><a href="https://1map.com/pt/map-embed">1 Map</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <H1>© 2023 Xpets S.A.</H1>
+        </div>
+    </footer>
+
+</body>
+
+</html>
