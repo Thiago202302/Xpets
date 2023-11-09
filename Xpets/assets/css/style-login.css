@@ -1,0 +1,105 @@
+:root{
+    --cor-de_fundo: #7a4a17;
+    --cor-de_fundo-alt: #c2803e;
+    --redirecionamento-fundo: rgb(211, 153, 65);
+
+    --cor-botao: #B77A3B;
+    --cor-botao-alt: #f7a554;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecario-login{
+    background-color: var(--cor-de_fundo);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px 0px 10px;
+    color: aliceblue;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-container{
+    background-color: var(--cor-de_fundo);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-login-a{
+    border-radius: 5px;
+    padding: 15px;
+    background-color: var(--cor-de_fundo);
+}
+
+.login-container form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-de_fundo-alt);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.login-container form input[type=text]{
+    max-width: 100%;
+    margin: 10px 0px 10px 0px;
+    border: none;
+    appearance: none;
+    background-color: var(--cor-de_fundo-alt);
+    border-bottom: .2em solid #623f19;
+    color: aliceblue;
+}
+
+.login-container form input[type=password]{
+    max-width: 100%;
+    margin: 10px 0px 10px 0px;
+    border: none;
+    appearance: none;
+    background-color: var(--cor-de_fundo-alt);
+    border-bottom: .2em solid #623f19;
+    color: aliceblue;
+}
+
+
+.login-container form button{
+    border: none;
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 5px;
+
+    background-color: var(--cor-botao);
+}
+
+.login-container form button:hover{
+    border: none;
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 5px;
+
+    background-color: var(--cor-botao-alt);
+}
+
+.redirec-cadastro{
+    background-color: var(--cor-de_fundo);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px 0px 10px;
+    color: aliceblue;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.redirec-cadastro a{
+    background-color: var(--redirecionamento-fundo);
+    padding: 5px;
+    border-radius: 5px;
+    color: aquamarine;
+    text-decoration: none;
+}

@@ -1,0 +1,72 @@
+-- Criação da tabela "cliente"
+CREATE TABLE cliente (
+    cliente_id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    id_unic INT,
+    FOREIGN KEY (id_unic) REFERENCES login(id_unic)
+);
+
+-- Criação da tabela "login"
+
+CREATE TABLE login(
+    nome_login VARCHAR(200) PRIMARY KEY,
+    id_unic INT AUTO_INCREMENT,
+    senha_login VARCHAR(200),
+    tipo_login INT
+);
+
+-- Tabela "endereco" para armazenar informações de endereço do cliente
+CREATE TABLE endereco (
+    endereco_id INT PRIMARY KEY AUTO_INCREMENT,
+    endereco VARCHAR(255),
+    cliente_id INT,
+    FOREIGN KEY (cliente_id) REFERENCES cliente(cliente_id)
+);
+
+-- Tabela "telefone" para armazenar informações de telefone do cliente
+CREATE TABLE telefone (
+    telefone_id INT PRIMARY KEY AUTO_INCREMENT,
+    telefone VARCHAR(20),
+    cliente_id INT,
+    FOREIGN KEY (cliente_id) REFERENCES cliente(cliente_id)
+);
+
+-- Criação da tabela "animal"
+CREATE TABLE animal (
+    animal_id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    especie VARCHAR(100) NOT NULL,
+    raca VARCHAR(100),
+    data_nascimento DATE,
+    cliente_id INT,
+    FOREIGN KEY (cliente_id) REFERENCES cliente(cliente_id)
+);
+
+-- Criação da tabela "funcionario"
+CREATE TABLE funcionario (
+    funcionario_id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    autoridade TINYINT NOT NULL,
+    codigo_identificacao VARCHAR(50) NOT NULL
+);
+
+
+-- Criação da tabela "compra"
+CREATE TABLE compra (
+    compra_id INT PRIMARY KEY AUTO_INCREMENT,
+    data_compra DATE,
+    cliente_id INT,
+    funcionario_id INT,
+    FOREIGN KEY (cliente_id) REFERENCES cliente(cliente_id),
+    FOREIGN KEY (funcionario_id) REFERENCES funcionario(funcionario_id)
+);
+
+-- Criação da tabela "produto"
+CREATE TABLE produto (
+    produto_id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    descricao TEXT,
+    preco DECIMAL(10, 2) NOT NULL
+);
+
+

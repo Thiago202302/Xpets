@@ -1,0 +1,151 @@
+.preenchimento {
+    display: flex;
+    justify-content: space-between;
+    border: 8px solid #a86f37;
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+}
+
+.imagem_feliz img {
+    max-width: 100%;
+}
+
+/* ---------
+    Vitrine
+
+    Xpets_admin12
+*/
+
+.vitrine-end{
+    background-color: #a86f37;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* 
+    Cabeçario
+*/
+.vitrine-cab {
+    background-color: #a86f37;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* 
+    Conteudo da vitrine
+*/
+.conteudo-vit {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.conteudo-vit ::-webkit-scrollbar{
+    background-color: #d18d49;
+    
+}
+
+/* Card */
+:root {
+    --background-color: #F7F2E7;
+    /* Cor de fundo aconchegante */
+    --main-color: #804000;
+    /* Cor principal */
+    --secondary-color: #D1BFA3;
+    /* Cor secundária */
+    --card-background: #FFFFFF;
+    /* Cor de fundo dos cards */
+    --card-border: #EAEAEA;
+    /* Cor da borda dos cards */
+    --card-shadow: rgba(0, 0, 0, 0.2);
+    /* Sombra dos cards */
+    --text-color: #000000;
+    /* Cor do texto */
+    --price-color: #6B6B6B;
+    /* Cor do preço */
+    --button-background: #804000;
+    /* Cor de fundo do botão */
+    --button-text-color: #FFFFFF;
+    /* Cor do texto do botão */
+    --button-hover-background: #6B3600;
+    /* Cor de fundo do botão ao passar o mouse */
+}
+
+.card-produto {
+    background-color: var(--card-background);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 8px var(--card-shadow);
+    max-width: 300px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 100%;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 20px;
+    color: var(--main-color);
+    /* Cor principal para o título */
+}
+
+.card p {
+    font-size: 14px;
+    color: var(--text-color);
+    /* Cor do texto */
+}
+
+.card .price {
+    color: var(--price-color);
+    /* Cor do preço */
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.card button:hover {
+    background-color: var(--button-hover-background);
+    opacity: 0.7;
+}
+
+/* vitrine de serviços */
+
+.serv-contest{
+    display: flex;
+}
+
+
+.card-serv{
+    background-color: var(--card-background);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 8px var(--card-shadow);
+    max-width: 300px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 100%;
+}
+
